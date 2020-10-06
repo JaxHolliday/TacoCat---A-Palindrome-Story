@@ -102,9 +102,7 @@
     <hr />
 
     <!-- Palindrome  -->
-    <h2>The Palindrome</h2>
-
-
+    <h2>Wild Encounter! Tacocat!</h2>
     <div>
         <div class="container">
             <div class="row">
@@ -132,15 +130,15 @@
             //Work with the gathered data
             let palinWord = ""
             for (let loop = userInput.length - 1; loop >= 0; loop--) {
-                palinWord += userInput.charAt(loop);
+                palinWord += userInput.charAt(loop).toLowerCase();
             };
             //Step 3
             //Result
 
             if (userInput == palinWord) {
-                alert("Congratz! You saved the Cat")
+                swal("Gotcha!", "Tacocat was caught!", "success");
             } else {
-                alert("You just woke the Hive! Try Again!")
+                swal("Sorry!", "Tacocat fainted! you gained 500 XP!", "error");
             }
             document.getElementById("reverseOutput").innerHTML = palinWord;
 
@@ -155,6 +153,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery.slim.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 
