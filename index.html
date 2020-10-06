@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TacoCat - A Palindrome Challenge</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TacoCat - A Palindrome Challenge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">TacoCat - A Palindrome Challenge</h1>
+                <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>                
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Palindrome  -->
+    <div><div class="container">
+             <div class="row h2">The Palindrome</div>
+             <div class="row">
+                 <div class="col"><input type="text" id="reverseString"/></div>
+                 <div class="col"><button class="btn btn-danger" id="flipBtn">Is it a Palindrome?</button></div>
+                 <div class="col"><span id="reverseOutput"></span></div>
+             </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Palindrome Script  -->
+    <script>
+        document.getElementById("flipBtn").addEventListener("click", function () {
+            //Button clicked event
+            //Step 1
+            //Retreiving Data
+            let userInput = document.getElementById("reverseString").value;
+
+            //Step 2
+            //Work with the gathered data
+            let palinWord = ""
+            for (let loop = userInput.length - 1; loop >= 0; loop--) {
+                palinWord += userInput.charAt(loop);
+            };
+            //Step 3
+            //Result
+            
+            if (userInput == palinWord) {
+                alert("Congratz! You saved the Cat")
+            } else {
+                alert("You just woke the Hive! Try Again!")
+            }
+            document.getElementById("reverseOutput").innerHTML = palinWord;
+
+
+        })
+
+
+
+
+
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery.slim.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
