@@ -43,6 +43,9 @@
             width: 70%;
         }
 
+        span{
+            font-size: 500%
+        }
     </style>
 
 </head>
@@ -97,8 +100,10 @@
 
     <!-- TacoCat Image -->
     <div class="container">
-        <div class="col"><input type="text" id="reverseString" /></div>
-        
+        <div class="row">
+            <div class="col"><input type="text" id="reverseString" /></div>
+            <div class="col"><button class="btn btn-danger" id="flipBtn">Is it a Palindrome?</button></div>
+        </div>
     </div>
     <hr />
 
@@ -107,8 +112,7 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="row"><img src="Images/Cute Taco Wallpaper Nyancat taco by sally flower.jpg" class="center" /></div>
-                <div class="col"><button class="btn btn-danger" id="flipBtn">Is it a Palindrome?</button></div>
+                <div class="row"><img src="Images/Cute Taco Wallpaper Nyancat taco by sally flower.jpg" class="center" /></div>                
                 <div class="col"><span id="reverseOutput"></span></div>
             </div>
         </div>
