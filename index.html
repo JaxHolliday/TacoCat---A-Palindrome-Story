@@ -13,6 +13,38 @@
     <!-- Bootstrap core CSS -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 
+
+    <style>
+        body {
+            color: black;
+            
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        h2 {
+            color: black;
+            text-align: center;
+        }
+
+        h3 {
+            color: black;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -36,10 +68,10 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="https://github.com/JaxHolliday" target="_blank">Git</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="https://jackson-hollidays-portfolio.netlify.app/" target="_blank">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -51,20 +83,35 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">TacoCat - A Palindrome Challenge</h1>
-                <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>                
+                <p class="lead">
+                    <h3>
+                        The program below is a basic palindrome calculator. As the user just put in the word of your choice to test and see if
+                        your word is a palindrome!
+                    </h3>
+                </p>
+                <p><h5>A <i>palindrome</i> is a word, number, phrase, or other sequence of characters which reads the same backward as forward.</h5></p>
             </div>
         </div>
     </div>
     <hr />
 
+    <!-- TacoCat Image -->
+    <div class="container">
+        <div class="row"><img src="Images/Cute Taco Wallpaper Nyancat taco by sally flower.jpg" class="center" /></div>
+    </div>
+    <hr />
+
     <!-- Palindrome  -->
-    <div><div class="container">
-             <div class="row h2">The Palindrome</div>
-             <div class="row">
-                 <div class="col"><input type="text" id="reverseString"/></div>
-                 <div class="col"><button class="btn btn-danger" id="flipBtn">Is it a Palindrome?</button></div>
-                 <div class="col"><span id="reverseOutput"></span></div>
-             </div>
+    <h2>The Palindrome</h2>
+
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col"><input type="text" id="reverseString" /></div>
+                <div class="col"><button class="btn btn-danger" id="flipBtn">Is it a Palindrome?</button></div>
+                <div class="col"><span id="reverseOutput"></span></div>
+            </div>
         </div>
 
 
@@ -89,7 +136,7 @@
             };
             //Step 3
             //Result
-            
+
             if (userInput == palinWord) {
                 alert("Congratz! You saved the Cat")
             } else {
@@ -97,8 +144,7 @@
             }
             document.getElementById("reverseOutput").innerHTML = palinWord;
 
-
-        })
+        });
 
 
 
