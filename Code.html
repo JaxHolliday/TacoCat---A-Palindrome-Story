@@ -8,14 +8,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Code for my Tacocat</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png">
+    <link rel="manifest" href="/Images/site.webmanifest">
 
     <!-- Bootstrap core CSS -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="Content/prism.css" rel="stylesheet" />
     <style>
+        body {
+            color: black;
+            text-align: center;
+            background-color: steelblue;
         
-
     </style>
 </head>
 
@@ -61,17 +70,44 @@
     </div>
 
     <hr />
+    <!-- Palindrome Script  -->
+    <h2>Javascript code for my Tacocat</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <pre><code class="language-js line-numbers"> 
+    <script>
+    document.getElementById("flipBtn").addEventListener("click", function () {
+        //Button clicked event
+        //Step 1
+        //Retreiving Data
+    let userInput = document.getElementById("reverseString").value;
 
-    <div class="card">        
-        <div class="container">
-            
+        //Step 2
+        //Work with the gathered data
+    let palinWord = ""
+       for (let loop = userInput.length - 1; loop >= 0; loop--) {
+            palinWord += userInput.charAt(loop).toLowerCase();
+            };
+           //Step 3
+           //Result
+        if (userInput == palinWord) {
+            swal("Gotcha!", "Tacocat was caught!", "success");
+        } else {
+            swal("Sorry!", "Tacocat fainted! you gained 500 XP!", "error");
+        }
+    document.getElementById("reverseOutput").innerHTML = palinWord;
+});    </script></code></pre>
+            </div>
         </div>
-    </div>
+    </div>       
+        
+          
 
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery.slim.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
-
+    <script src="Scripts/prism.js"></script>
 </body>
 
 </html>
