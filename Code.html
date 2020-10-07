@@ -33,19 +33,19 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="#">TacoCat - A Palindrome Challenge</a>
+            <a class="navbar-brand" href="/index.html">TacoCat - A Palindrome Challenge</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/index.html">
                             Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
@@ -59,24 +59,14 @@
         </div>
     </nav>
 
-    <!-- Page Title -->
-    <div class="container">
-        <div class="row">
-            <div class="col h3 text-center">
-                <br>
-                My Code behind my Palindrome
-            </div>
-        </div>        
-    </div>
-
     <hr />
     <!-- Palindrome Script  -->
     <h2>Javascript code for my Tacocat</h2>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <pre><code class="language-js line-numbers"> 
-    <script>
+<div class="row">
+<div class="col">
+<pre><code class="language-js line-numbers"> 
+<script>
     document.getElementById("flipBtn").addEventListener("click", function () {
         //Button clicked event
         //Step 1
@@ -86,23 +76,23 @@
         //Step 2
         //Work with the gathered data
     let palinWord = ""
-       for (let loop = userInput.length - 1; loop >= 0; loop--) {
+        for (let loop = userInput.length - 1; loop >= 0; loop--) {
             palinWord += userInput.charAt(loop).toLowerCase();
-            };
-           //Step 3
-           //Result
+        };
+        //Step 3
+        //Result
         if (userInput == palinWord) {
             swal("Gotcha!", "Tacocat was caught!", "success");
         } else {
             swal("Sorry!", "Tacocat fainted! you gained 500 XP!", "error");
         }
     document.getElementById("reverseOutput").innerHTML = palinWord;
-});    </script></code></pre>
-            </div>
-        </div>
-    </div>       
-        
-          
+});</script></code></pre>
+</div>
+</div>
+    </div>
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery.slim.min.js"></script>
