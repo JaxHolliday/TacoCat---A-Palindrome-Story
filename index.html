@@ -14,49 +14,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png">
-    <link rel="manifest" href="/Images/site.webmanifest">
+    <link rel="manifest" href="#">
 
     <!-- Bootstrap core CSS -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/CSS/Sitestyle.css" rel="stylesheet" />
 
-
-    <style>
-        body {
-            color: black;
-            text-align: center;
-            background-color: steelblue;
-        }
-
-        h1 {
-            color: black;
-            text-align: center;
-        }
-
-        h2 {
-            color: black;
-            text-align: center;
-        }
-
-        h3 {
-            color: black;
-            text-align: center;
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 30%;
-        }
-
-        span {
-            font-size: 500%
-        }
-
-        #reverseString {
-            text-transform: lowercase;
-        }
-    </style>
 
 </head>
 
@@ -129,36 +92,12 @@
 
 
     </div>
-
-
-
-
-    <!-- Palindrome Script  -->
+    <!-- My custom JS -->
+    <script src="/JS/Tacocat.js"></script>
     <script>
-        document.getElementById("flipBtn").addEventListener("click", function () {
-            //Button clicked event
-            //Step 1
-            //Retreiving Data
-            let userInput = document.getElementById("reverseString").value;
-
-            //Step 2
-            //Work with the gathered data
-            let palinWord = ""
-            for (let loop = userInput.length - 1; loop >= 0; loop--) {
-                palinWord += userInput.charAt(loop).toLowerCase();
-            };
-            //Step 3
-            //Result
-
-            if (userInput == palinWord) {
-                swal("Gotcha!", "Tacocat was caught!", "success");
-            } else {
-                swal("Sorry!", "Tacocat fainted! you gained 500 XP!", "error");
-            }
-            document.getElementById("reverseOutput").innerHTML = palinWord;
-
-        });
+        document.getElementById("flipBtn").addEventListener("click", tacocat);
     </script>
+    
 
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery.slim.min.js"></script>
