@@ -69,7 +69,13 @@
   <ItemGroup>
     <Content Include="Code.html" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Images\android-chrome-192x192.png" />
+    <Content Include="Images\android-chrome-512x512.png" />
+    <Content Include="Images\apple-touch-icon.png" />
     <Content Include="Images\Cute Taco Wallpaper Nyancat taco by sally flower.jpg" />
+    <Content Include="Images\favicon-16x16.png" />
+    <Content Include="Images\favicon-32x32.png" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\jquery.slim.min.js" />
@@ -79,6 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\site.webmanifest" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
