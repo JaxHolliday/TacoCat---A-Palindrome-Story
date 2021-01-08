@@ -21,10 +21,10 @@
     <link href="/CSS/Sitestyle.css" rel="stylesheet" />
     <link href="/Content/Sitestyle.css" rel="stylesheet" />
 
+
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
@@ -75,7 +75,8 @@
     <div class="container">
         <div class="row">
             <div class="col"><input type="text" id="reverseString" /></div>
-            <div class="col"><button class="btn btn-danger" id="flipBtn">Is it a Palindrome?</button></div>
+            <div class="col"><span style=" color:black; font-size: 30pt" id="reverseOutput"></span></div>
+            <div class="col"><button class="btn btn-warning" id="flipBtn">Is it a Palindrome?</button></div>
         </div>
     </div>
     <br />
@@ -83,21 +84,15 @@
     <!-- Palindrome  -->
     <h2>Wild Encounter! Tacocat!</h2>
     <div class="row"><img src="Images/Cute Taco Wallpaper Nyancat taco by sally flower.jpg" class="center" /></div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col"><span id="reverseOutput"></span></div>
-            </div>
-        </div>
+    
 
 
-    </div>
     <!-- My custom JS -->
     <script src="/JS/Tacocat.js"></script>
     <script>
         document.getElementById("flipBtn").addEventListener("click", tacocat);
     </script>
-    
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery.slim.min.js"></script>
