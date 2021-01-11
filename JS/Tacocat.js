@@ -14,11 +14,9 @@
     //Result
 
     if (userInput == palinWord) {
-        swal("Gotcha!", "Tacocat was caught!", "success");
-        form.reset();
+        swal("Gotcha!", "Tacocat was caught!", "success");        
     } else {
-        swal("Sorry!", "Tacocat fainted! you gained 500 XP!");
-        form.reset();
+        swal("Sorry!", "Tacocat fainted! you gained 500 XP!");        
     }
     document.getElementById("reverseOutput").innerHTML = palinWord;
 };
